@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">projet3</string>
+    <string name="link">
+         <a href=".">inscrivez-vous ici</a>
+    </string>
+    <string name="select">selecter la ville</string>
+</resources>

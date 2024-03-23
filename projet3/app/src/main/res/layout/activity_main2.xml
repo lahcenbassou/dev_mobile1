@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#FFFFFF"
+    android:paddingBottom="20sp"
+    >
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="420dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:paddingLeft="65dp"
+        android:paddingRight="35dp"
+        android:text="Vous serez le plus proche au marche de travail c'est gratuit  "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="116dp"
+        android:layout_height="67dp"
+        android:background="#FFFFFF"
+
+        android:paddingLeft="20sp"
+        android:paddingTop="20dp"
+        android:text="Vous etes:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="298dp"
+        android:layout_height="65dp"
+        android:text="recruteur cherche des cv et pose des annonces de travail"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="67dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />/>
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:text="candidat cherche des annonces et pose des cv"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="127dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="20sp"
+        android:paddingTop="20dp"
+        android:text="E-mail:"
+
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        tools:layout_editor_absoluteX="-4dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="289dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Votre addresse e-mail..."
+        android:inputType="text"
+        android:paddingLeft="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="127dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="20sp"
+        android:paddingTop="20dp"
+        android:text="Ville:"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="275dp"
+        android:layout_height="69dp"
+        android:layout_margin="16dp"
+        android:hint="@string/select"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        tools:layout_editor_absoluteX="133dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt"
+            android:layout_width="214dp"
+            android:layout_height="62dp"
+            android:background="@drawable/border"
+            android:inputType="none"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="277dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="134dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="154dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="20sp"
+        android:paddingTop="20dp"
+        android:text="Mot de passe:"
+
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="-4dp" />
+
+    <EditText
+        android:id="@+id/editTextText11"
+        android:layout_width="259dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="choisissez un mot de passe..."
+        android:inputType="text"
+        android:paddingLeft="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="305dp"
+        android:layout_height="35dp"
+        android:text="(au moins 5 caractères) choisissez un mot de passe qui n'est pas facile à deviner."
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="434dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText11"
+        app:layout_constraintStart_toEndOf="@+id/textView12"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="101dp"
+        android:layout_height="28dp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:background="@color/grey"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="154dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="20sp"
+        android:paddingTop="20dp"
+        android:text="Confirmer le mot de passe:"
+
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        tools:layout_editor_absoluteX="-4dp" />
+
+
+    <EditText
+        android:id="@+id/editTextText12"
+        android:layout_width="259dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="choisissez un mot de passe..."
+        android:inputType="text"
+        android:paddingLeft="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        android:background="#387ADF"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:layout_marginTop="60dp"
+        android:paddingRight="110dp"
+        android:text="En validant mon inscription. j'accepte les condition generales d'utilisation le site alkhad.ma"
+        android:textSize="13dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="108dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#5FD068"
+        android:onClick="cree_compte"
+        android:text="Cree un compte"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:layout_editor_absoluteX="304dp"
+        app:layout_constraintStart_toEndOf="@+id/textView15"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="305dp"
+        android:layout_height="73dp"
+        android:text=""
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="641dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="74dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    >
+
+</androidx.constraintlayout.widget.ConstraintLayout>
